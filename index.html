@@ -3,11 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>BoozeBrains | Curated Social Experiences</title>
+<title>BoozeBrains | brains on us buss on you..!/title>
 
-<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+<!-- Luxury Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
 
 <style>
+/* =========================
+   CHAMPAGNE COLOR SYSTEM
+========================= */
 :root{
   --bg-main:#FBF8F3;
   --bg-soft:#F6F1E9;
@@ -32,10 +36,12 @@ body{
   font-family:'Poppins',sans-serif;
   background:var(--bg-main);
   color:var(--text-body);
-  overflow-x:hidden;
+  letter-spacing:.3px;
 }
 
-/* HERO */
+/* =========================
+   HERO
+========================= */
 .hero{
   height:100vh;
   background:linear-gradient(180deg,#FBF8F3,#F6F1E9);
@@ -46,21 +52,32 @@ body{
   padding:20px;
 }
 
-.hero h1{
-  font-family:'Baloo 2',cursive;
-  font-size:78px;
-  letter-spacing:4px;
+.brand{
+  font-family:'Playfair Display',serif;
+  font-size:76px;
+  font-weight:600;
+  letter-spacing:8px;
+  text-transform:uppercase;
   color:var(--text-dark);
 }
 
-.hero p{
-  font-size:22px;
+.tagline{
+  font-size:16px;
+  letter-spacing:4px;
+  text-transform:uppercase;
   color:var(--text-muted);
-  margin-top:10px;
+  margin-top:14px;
+}
+
+.brand-divider{
+  width:90px;
+  height:2px;
+  background:var(--champagne-gold);
+  margin:22px auto 40px;
+  border-radius:2px;
 }
 
 .hero a{
-  margin-top:45px;
   display:inline-block;
   padding:18px 48px;
   border-radius:50px;
@@ -68,6 +85,7 @@ body{
   color:#fff;
   text-decoration:none;
   font-weight:500;
+  letter-spacing:1.5px;
   box-shadow:0 12px 30px rgba(200,169,106,.35);
   transition:.3s;
 }
@@ -76,7 +94,9 @@ body{
   transform:translateY(-3px);
 }
 
-/* SECTIONS */
+/* =========================
+   SECTIONS
+========================= */
 .section{
   padding:110px 20px;
   max-width:1100px;
@@ -85,18 +105,25 @@ body{
 }
 
 .section h2{
-  font-family:'Baloo 2',cursive;
-  font-size:44px;
-  margin-bottom:25px;
+  font-family:'Playfair Display',serif;
+  font-size:42px;
+  font-weight:500;
+  letter-spacing:2px;
   color:var(--text-dark);
+  margin-bottom:25px;
 }
 
 .section p{
-  font-size:18px;
+  font-size:17px;
   line-height:1.9;
+  max-width:720px;
+  margin:0 auto;
+  color:var(--text-body);
 }
 
-/* EVENT CARD */
+/* =========================
+   EVENT CARD
+========================= */
 .event{
   margin-top:80px;
   background:var(--bg-card);
@@ -106,38 +133,48 @@ body{
 }
 
 .event span{
-  color:var(--champagne-gold);
+  font-size:13px;
   letter-spacing:4px;
+  text-transform:uppercase;
+  color:var(--champagne-gold);
 }
 
 .event h3{
-  font-family:'Baloo 2',cursive;
-  font-size:38px;
+  font-family:'Playfair Display',serif;
+  font-size:34px;
+  font-weight:600;
   margin:20px 0;
   color:var(--text-dark);
 }
 
 .event p{
+  font-size:15px;
   color:var(--text-muted);
 }
 
 .event .price{
-  font-size:34px;
+  font-family:'Playfair Display',serif;
+  font-size:30px;
+  font-weight:600;
   color:var(--champagne-bronze);
+  margin:20px 0;
 }
 
 .event a{
-  margin-top:30px;
   display:inline-block;
+  margin-top:30px;
   padding:16px 42px;
   border-radius:40px;
   background:linear-gradient(135deg,var(--champagne-gold),var(--champagne-rose));
   color:#fff;
   text-decoration:none;
+  letter-spacing:1.5px;
   box-shadow:0 10px 25px rgba(200,169,106,.35);
 }
 
-/* VIBES */
+/* =========================
+   VIBES
+========================= */
 .vibes{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
@@ -150,10 +187,13 @@ body{
   padding:40px;
   border-radius:22px;
   border:1px solid #EFE6D8;
+  font-size:15px;
   color:var(--text-body);
 }
 
-/* GALLERY */
+/* =========================
+   GALLERY
+========================= */
 .gallery{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
@@ -167,54 +207,70 @@ body{
   background-position:center;
 }
 
-/* FINAL CTA */
+/* =========================
+   FINAL CTA
+========================= */
 .final{
   padding:130px 20px;
   background:var(--bg-soft);
   text-align:center;
 }
+
 .final p{
-  font-size:28px;
+  font-family:'Playfair Display',serif;
+  font-size:26px;
+  font-weight:500;
   color:var(--text-dark);
 }
+
 .final a{
-  margin-top:40px;
   display:inline-block;
+  margin-top:40px;
   padding:18px 50px;
   border-radius:50px;
   background:linear-gradient(135deg,var(--champagne-gold),var(--champagne-rose));
   color:#fff;
   text-decoration:none;
+  letter-spacing:1.5px;
 }
 
-/* FOOTER */
+/* =========================
+   FOOTER
+========================= */
 footer{
   padding:45px 20px;
   text-align:center;
   background:#FFFFFF;
   color:var(--text-muted);
-  font-size:14px;
+  font-size:13px;
+  letter-spacing:.6px;
   border-top:1px solid #EFE6D8;
 }
 
-/* MOBILE */
+/* =========================
+   MOBILE
+========================= */
 @media(max-width:768px){
-  .hero h1{font-size:52px;}
-  .section h2{font-size:34px;}
+  .brand{font-size:52px;letter-spacing:6px;}
+  .section h2{font-size:32px;}
+  .final p{font-size:22px;}
 }
 </style>
 </head>
 
 <body>
 
+<!-- HERO -->
 <section class="hero">
   <div>
-    <h1>BOOZEBRAINS</h1>
-    <p>curated social experiences</p>
+    <h1 class="brand">BOOZEBRAINS</h1>
+    <p class="tagline">curated social experiences</p>
+    <div class="brand-divider"></div>
     <a href="#event">RESERVE YOUR PLACE</a>
   </div>
 </section>
 
+<!-- CONTENT -->
 <section class="section">
   <h2>Thoughtfully Hosted</h2>
   <p>
@@ -231,9 +287,9 @@ footer{
   </div>
 
   <div class="vibes">
-    <div class="vibe">Curated guest list</div>
-    <div class="vibe">Elegant venues</div>
-    <div class="vibe">21+ respectful experiences</div>
+    <div class="vibe">Carefully curated guest list</div>
+    <div class="vibe">Elegant venues & thoughtful hosting</div>
+    <div class="vibe">Respectful, inclusive, 21+ experiences</div>
   </div>
 
   <div class="gallery">
@@ -244,14 +300,16 @@ footer{
   </div>
 </section>
 
+<!-- FINAL CTA -->
 <section class="final">
-  <p>For those who appreciate refined social experiences.</p>
+  <p>Designed for those who appreciate refined social experiences.</p>
   <a href="#">JOIN THE NEXT GATHERING</a>
 </section>
 
+<!-- FOOTER -->
 <footer>
   © 2025 BoozeBrains • Bengaluru<br>
-  21+ Only • Drink Responsibly
+  Thoughtfully curated social experiences • 21+ only
 </footer>
 
 </body>
