@@ -3,23 +3,23 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>BoozeBrains | Where Nights Turn Into Stories</title>
+<title>BoozeBrains | Curated Social Experiences</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
 
 <style>
 :root{
-  --bg-main:#FFFFFF;
-  --bg-soft:#FAF4F2;
+  --bg-main:#FBF8F3;
+  --bg-soft:#F6F1E9;
   --bg-card:#FFFFFF;
 
-  --wine-dark:#6B1A24;
-  --wine:#C56B73;
-  --wine-accent:#E63946;
+  --champagne-gold:#C8A96A;
+  --champagne-rose:#D8B4A0;
+  --champagne-bronze:#B8934F;
 
-  --text-dark:#2B1A1A;
-  --text-body:#4A3A3A;
-  --text-muted:#8A7A7A;
+  --text-dark:#3A2E25;
+  --text-body:#5A4A3F;
+  --text-muted:#8A7A6A;
 }
 
 /* RESET */
@@ -35,16 +35,10 @@ body{
   overflow-x:hidden;
 }
 
-/* ANIMATIONS */
-@keyframes fadeUp{
-  from{opacity:0;transform:translateY(30px);}
-  to{opacity:1;transform:none;}
-}
-
-/* HERO – NOW LIGHT */
+/* HERO */
 .hero{
   height:100vh;
-  background:#FAF4F2;
+  background:linear-gradient(180deg,#FBF8F3,#F6F1E9);
   display:flex;
   align-items:center;
   justify-content:center;
@@ -55,16 +49,14 @@ body{
 .hero h1{
   font-family:'Baloo 2',cursive;
   font-size:78px;
-  letter-spacing:5px;
-  color:var(--wine-dark);
-  animation:fadeUp 1s ease forwards;
+  letter-spacing:4px;
+  color:var(--text-dark);
 }
 
 .hero p{
   font-size:22px;
   color:var(--text-muted);
   margin-top:10px;
-  animation:fadeUp 1.2s ease forwards;
 }
 
 .hero a{
@@ -72,17 +64,16 @@ body{
   display:inline-block;
   padding:18px 48px;
   border-radius:50px;
-  background:linear-gradient(135deg,var(--wine),var(--wine-accent));
-  color:white;
+  background:linear-gradient(135deg,var(--champagne-gold),var(--champagne-rose));
+  color:#fff;
   text-decoration:none;
   font-weight:500;
-  box-shadow:0 12px 30px rgba(230,57,70,.25);
-  transition:.35s;
-  animation:fadeUp 1.4s ease forwards;
+  box-shadow:0 12px 30px rgba(200,169,106,.35);
+  transition:.3s;
 }
 .hero a:hover{
-  transform:translateY(-4px);
-  box-shadow:0 18px 40px rgba(230,57,70,.35);
+  background:linear-gradient(135deg,var(--champagne-bronze),var(--champagne-gold));
+  transform:translateY(-3px);
 }
 
 /* SECTIONS */
@@ -97,28 +88,25 @@ body{
   font-family:'Baloo 2',cursive;
   font-size:44px;
   margin-bottom:25px;
-  color:var(--wine-dark);
+  color:var(--text-dark);
 }
 
 .section p{
   font-size:18px;
-  color:var(--text-body);
   line-height:1.9;
 }
 
-/* EVENT CARD – LIGHT CARD */
+/* EVENT CARD */
 .event{
   margin-top:80px;
-  background:var(--bg-soft);
-  border-radius:28px;
+  background:var(--bg-card);
+  border-radius:30px;
   padding:70px 30px;
-  box-shadow:0 20px 60px rgba(0,0,0,.08);
-  transition:.3s;
+  box-shadow:0 25px 60px rgba(0,0,0,.08);
 }
-.event:hover{transform:translateY(-6px);}
 
 .event span{
-  color:var(--wine);
+  color:var(--champagne-gold);
   letter-spacing:4px;
 }
 
@@ -126,7 +114,7 @@ body{
   font-family:'Baloo 2',cursive;
   font-size:38px;
   margin:20px 0;
-  color:var(--wine-dark);
+  color:var(--text-dark);
 }
 
 .event p{
@@ -135,7 +123,7 @@ body{
 
 .event .price{
   font-size:34px;
-  color:var(--wine-dark);
+  color:var(--champagne-bronze);
 }
 
 .event a{
@@ -143,10 +131,10 @@ body{
   display:inline-block;
   padding:16px 42px;
   border-radius:40px;
-  background:linear-gradient(135deg,var(--wine),var(--wine-accent));
+  background:linear-gradient(135deg,var(--champagne-gold),var(--champagne-rose));
   color:#fff;
   text-decoration:none;
-  box-shadow:0 12px 30px rgba(230,57,70,.25);
+  box-shadow:0 10px 25px rgba(200,169,106,.35);
 }
 
 /* VIBES */
@@ -158,14 +146,12 @@ body{
 }
 
 .vibe{
-  background:#FFFFFF;
+  background:var(--bg-card);
   padding:40px;
   border-radius:22px;
-  border:1px solid #EFE3E3;
+  border:1px solid #EFE6D8;
   color:var(--text-body);
-  transition:.3s;
 }
-.vibe:hover{transform:translateY(-6px);}
 
 /* GALLERY */
 .gallery{
@@ -179,34 +165,26 @@ body{
   border-radius:22px;
   background-size:cover;
   background-position:center;
-  transition:.4s;
 }
-.gallery div:hover{transform:scale(1.05);}
-
-.g1{background-image:url("https://images.unsplash.com/photo-1504674900247-0877df9cc836");}
-.g2{background-image:url("https://images.unsplash.com/photo-1492684223066-81342ee5ff30");}
-.g3{background-image:url("https://images.unsplash.com/photo-1514525253161-7a46d19cd819");}
-.g4{background-image:url("https://images.unsplash.com/photo-1519677100203-a0e668c92439");}
 
 /* FINAL CTA */
 .final{
   padding:130px 20px;
-  background:#FAF4F2;
+  background:var(--bg-soft);
   text-align:center;
 }
 .final p{
   font-size:28px;
-  color:var(--wine-dark);
+  color:var(--text-dark);
 }
 .final a{
   margin-top:40px;
   display:inline-block;
   padding:18px 50px;
   border-radius:50px;
-  background:linear-gradient(135deg,var(--wine),var(--wine-accent));
+  background:linear-gradient(135deg,var(--champagne-gold),var(--champagne-rose));
   color:#fff;
   text-decoration:none;
-  box-shadow:0 18px 40px rgba(230,57,70,.3);
 }
 
 /* FOOTER */
@@ -216,7 +194,7 @@ footer{
   background:#FFFFFF;
   color:var(--text-muted);
   font-size:14px;
-  border-top:1px solid #EFE3E3;
+  border-top:1px solid #EFE6D8;
 }
 
 /* MOBILE */
@@ -232,49 +210,48 @@ footer{
 <section class="hero">
   <div>
     <h1>BOOZEBRAINS</h1>
-    <p>where nights turn into stories</p>
-    <a href="#event">JOIN THIS MONTH’S VIBE</a>
+    <p>curated social experiences</p>
+    <a href="#event">RESERVE YOUR PLACE</a>
   </div>
 </section>
 
 <section class="section">
-  <h2>This Isn’t a Club</h2>
+  <h2>Thoughtfully Hosted</h2>
   <p>
-    BoozeBrains hosts curated monthly social nights in Bangalore.
-    Limited people. Real conversations. Music, drinks, games —
-    and a vibe you don’t forget.
+    Intimate gatherings designed around conversation, connection,
+    and a refined social atmosphere.
   </p>
 
   <div class="event" id="event">
-    <span>SEPTEMBER VIBE</span>
-    <h3>Monthly Social Night</h3>
+    <span>SEPTEMBER GATHERING</span>
+    <h3>The Monthly Social</h3>
     <p>📍 Bengaluru • 🗓 Last Saturday • ⏰ 7 PM</p>
     <div class="price">₹1,499</div>
-    <a href="#">RESERVE YOUR SPOT</a>
+    <a href="#">CONFIRM ATTENDANCE</a>
   </div>
 
   <div class="vibes">
-    <div class="vibe">Curated crowd. No random chaos.</div>
-    <div class="vibe">Monthly themes & experiences.</div>
-    <div class="vibe">Safe, respectful, 21+ only.</div>
+    <div class="vibe">Curated guest list</div>
+    <div class="vibe">Elegant venues</div>
+    <div class="vibe">21+ respectful experiences</div>
   </div>
 
   <div class="gallery">
-    <div class="g1"></div>
-    <div class="g2"></div>
-    <div class="g3"></div>
-    <div class="g4"></div>
+    <div style="background-image:url('https://images.unsplash.com/photo-1504674900247-0877df9cc836')"></div>
+    <div style="background-image:url('https://images.unsplash.com/photo-1492684223066-81342ee5ff30')"></div>
+    <div style="background-image:url('https://images.unsplash.com/photo-1514525253161-7a46d19cd819')"></div>
+    <div style="background-image:url('https://images.unsplash.com/photo-1519677100203-a0e668c92439')"></div>
   </div>
 </section>
 
 <section class="final">
-  <p>This isn’t for everyone.<br>But if you feel the vibe — you belong.</p>
-  <a href="#">JOIN THE NEXT NIGHT</a>
+  <p>For those who appreciate refined social experiences.</p>
+  <a href="#">JOIN THE NEXT GATHERING</a>
 </section>
 
 <footer>
   © 2025 BoozeBrains • Bengaluru<br>
-  Drink Responsibly • 21+ Only
+  21+ Only • Drink Responsibly
 </footer>
 
 </body>
