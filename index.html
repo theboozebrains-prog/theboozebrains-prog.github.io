@@ -72,8 +72,15 @@ body{
   border-radius:2px;
 }
 
-.hero a{
-  display:inline-block;
+/* HERO BUTTONS */
+.hero-actions{
+  display:flex;
+  gap:18px;
+  justify-content:center;
+  flex-wrap:wrap;
+}
+
+.primary-btn{
   padding:18px 48px;
   border-radius:50px;
   background:linear-gradient(135deg,var(--champagne-gold),var(--champagne-rose));
@@ -84,9 +91,27 @@ body{
   box-shadow:0 12px 30px rgba(200,169,106,.35);
   transition:.3s;
 }
-.hero a:hover{
+
+.primary-btn:hover{
   background:linear-gradient(135deg,var(--champagne-bronze),var(--champagne-gold));
   transform:translateY(-3px);
+}
+
+.secondary-btn{
+  padding:18px 38px;
+  border-radius:50px;
+  background:transparent;
+  border:1.5px solid var(--champagne-gold);
+  color:var(--champagne-gold);
+  text-decoration:none;
+  font-weight:500;
+  letter-spacing:1.5px;
+  transition:.3s;
+}
+
+.secondary-btn:hover{
+  background:var(--champagne-gold);
+  color:#fff;
 }
 
 /* SECTIONS */
@@ -246,7 +271,10 @@ footer{
     <h1 class="brand">BOOZEBRAINS</h1>
     <p class="tagline">Brains on us, buzz on you!</p>
     <div class="brand-divider"></div>
-    <a href="#event">RESERVE YOUR PLACE</a>
+    <div class="hero-actions">
+      <a href="#event" class="primary-btn">RESERVE YOUR PLACE</a>
+      <a href="about.html" class="secondary-btn">ABOUT</a>
+    </div>
   </div>
 </section>
 
